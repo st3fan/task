@@ -8,6 +8,7 @@ import "sync"
 
 type Func func(task *Task)
 
+// TODO Should this be an interface?
 type Task struct {
 	closed  chan struct{}
 	waiting sync.WaitGroup
